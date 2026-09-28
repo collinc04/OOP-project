@@ -5,10 +5,10 @@ public class grocery_management {
     double[] itemPrices = new double[10];
     int[] itemStocks = new int[10];
 
-
+    //TASK 3
   }
 
-  //TASK 1
+  //TASK 1 (COLLIN)
   /**
    * Prints the inventory of the items in the grocery store.
    * @param names Array of item names.
@@ -27,8 +27,16 @@ public class grocery_management {
   }
 
   //TASK 2
-
-  //TASK 3
+  /**
+   * TODO
+   * @param names
+   * @param stocks
+   * @param target
+   * @param amount
+   */
+  public static void restockItem(String[] names, int[] stocks, String target, int amount) {
+    //TODO
+  }
 
   /*
   Boilerplate by Collin Cook
