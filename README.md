@@ -16,4 +16,8 @@ Collin created the boilerplate, the readme and completed task-1
 
 
 UML class diagram:
+
+
+
+
 <img width="374" height="321" alt="Screenshot 2026-09-28 175345" src="https://github.com/user-attachments/assets/51c93617-4685-4473-9795-054213872596" />
