@@ -7,9 +7,9 @@ like its name, category, quantity, and price.
 The same index in each array will refer to the same grocery item.
 
 Tasks:
-README: Luke
-Task-1: Collin
-Task-2: Samipya
-Task-3: Kerry
+README: Luke <br>
+Task-1: Collin <br>
+Task-2: Samipya <br>
+Task-3: Kerry <br>
 
 Collin created the boilerplate, the readme and completed task-1
