@@ -65,7 +65,7 @@ public class grocery_management {
     }
   }
 
-  //TASK 2
+  //TASK 2 (Samipya)
     /**
    * Adds stock to an existing item by searching for its name.
    * Prints "Item not found." if no item matches the target name.
