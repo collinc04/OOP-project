@@ -10,12 +10,12 @@ How the program works:
 The program is straightforward to run. Entering 1 will display the current inventory as shown in the Inventory image. Entering 2 will allow you to specify what item you want to restock and you will be asked how many of that item is being added as shown in the Restock image. If you enter an item that is not listed in the inventory, then you will be informed that the item cannot be found as shown in the NotFoud image. Entering 3 will exit the program as shown in the Exit image.  
 
 Tasks:
-README: Luke <br>
-Task-1: Collin <br>
-Task-2: Samipya <br>
-Task-3: Kerry <br>
-
-Collin created the boilerplate, the readme and completed task-1
+Luke: README <br>
+Collin: Task-1, made repo, and initial commit for the README <br>
+Samipya: Task-2 <br>
+Kerry: Task-3 <br> 
+Sagar: <br>
+Paras: <br> 
 
 
 UML class diagram:
