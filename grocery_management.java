@@ -14,6 +14,21 @@ public class grocery_management {
     double[] itemPrices = new double[10];
     int[] itemStocks = new int[10];
 
+    //test values
+    itemNames[0] = "Milk";
+    itemNames[1] = "Eggs";
+    itemNames[2] = "Sugar";
+    itemNames[3] = "Bread";
+    itemPrices[0] = 33.99;
+    itemPrices[1] = 50.99;
+    itemPrices[2] = 5.00;
+    itemPrices[3] = 3.00;
+    itemStocks[0] = 5;
+    itemStocks[1] = 5;
+    itemStocks[2] = 5;
+    itemStocks[3] = 5;
+
+
     //TASK 3 (Kerry)
     Scanner keyboard = new Scanner(System.in);
 
@@ -56,11 +71,12 @@ public class grocery_management {
    */
   public static void printInventory(String[] names, double[] prices, int[] stocks) {
     //cycle names
+    System.out.println("Name | Price | Stock");
     for(int i = 0; i < names.length; i++) {
       //check null
       if(names[i] != null) {
         //print all the info
-        System.out.println(names[i] + " " + prices[i] + " " + stocks[i]);
+        System.out.println(names[i] + " | " + prices[i] + " | " + stocks[i]);
       }
     }
   }
