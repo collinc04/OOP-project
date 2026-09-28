@@ -1,28 +1,51 @@
+import java.util.Scanner;
+
 public class grocery_management {
+  /**
+   * Main initializes arrays for item names, prives, and stocks
+   * it then displays a menu that allows the user to see inventory,
+   * restock items, or exit. 
+   * 
+   * @param args command line arguments, not used 
+   */
   public static void main(String[] args) {
     //variables to store items
     String[] itemNames = new String[10];
     double[] itemPrices = new double[10];
     int[] itemStocks = new int[10];
 
-    //TASK 3
-    Scanner scanner = new Scanner(System.in);
+    //TASK 3 (Kerry)
+    Scanner keyboard = new Scanner(System.in);
 
-    while (true) {
-      //display menu
-      System.out.println("\nGrocery Management System");
-      System.out.println("1. View Inventory");
-      System.out.println("2. Restock Item");
-      System.out.println("3. Exit");
-      System.out.print("Enter choice: ");
+    while (true){
+      System.out.println("\n--Menu--");
+      System.out.println("1: View Inventory");
+      System.out.println("2: Restock Item");
+      System.out.println("3: Exit");
+      System.out.println("Choose a menu option: ");
 
-      int choice = scanner.nextInt();
-      scanner.nextLine();
-      
-      //View Inventory
-      if (choice ==1){
-        printInventory(itemsNames, itemPrices, itemStocks);
+      int choice = keyboard.nextInt();
+      System.out.println("\n");
+      if (choice == 1){
+        printInventory(itemNames, itemPrices, itemStocks);
+      }else if (choice == 2){
+          keyboard.nextLine();//used to cleare the leftover newline
+          System.out.print("Enter the name of the item being restocked: ");
+          String itemRestocked = keyboard.nextLine();
+          System.out.print("How many are being added: ");
+          int amountAdded = keyboard.nextInt();
+          System.out.println("\n");
+          
+          restockItem(itemNames, itemStocks, itemRestocked, amountAdded);
+      }else if (choice == 3){
+        System.out.println("Exiting menu");
+        break;
+      }else{
+        System.out.println("That is not a valid menu option. ");
       }
+      
+    }
+  }
 
   //TASK 1 (COLLIN)
   /**
