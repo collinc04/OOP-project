@@ -6,7 +6,23 @@ public class grocery_management {
     int[] itemStocks = new int[10];
 
     //TASK 3
-  }
+    Scanner scanner = new Scanner(System.in);
+
+    while (true) {
+      //display menu
+      System.out.println("\nGrocery Management System");
+      System.out.println("1. View Inventory");
+      System.out.println("2. Restock Item");
+      System.out.println("3. Exit");
+      System.out.print("Enter choice: ");
+
+      int choice = scanner.nextInt();
+      scanner.nextLine();
+      
+      //View Inventory
+      if (choice ==1){
+        printInventory(itemsNames, itemPrices, itemStocks);
+      }
 
   //TASK 1 (COLLIN)
   /**
