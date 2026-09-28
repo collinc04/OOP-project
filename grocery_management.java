@@ -66,15 +66,31 @@ public class grocery_management {
   }
 
   //TASK 2
-  /**
-   * TODO
-   * @param names
-   * @param stocks
-   * @param target
-   * @param amount
+    /**
+   * Adds stock to an existing item by searching for its name.
+   * Prints "Item not found." if no item matches the target name.
+   * @param names Array of item names.
+   * @param stocks Array of item stocks.
+   * @param target The name of the item to restock.
+   * @param amount The quantity to add to the item's current stock.
    */
   public static void restockItem(String[] names, int[] stocks, String target, int amount) {
-    //TODO
+    boolean found = false;
+
+    //cycle names
+    for (int i = 0; i < names.length; i++) {
+      //check null first so equals() doesn't crash on empty slots
+      if (names[i] != null && names[i].equals(target)) {
+        stocks[i] += amount;
+        found = true;
+        break;
+      }
+    }
+
+    //only report failure after checking the whole array
+    if (!found) {
+      System.out.println("Item not found.");
+    }
   }
 
   /*
