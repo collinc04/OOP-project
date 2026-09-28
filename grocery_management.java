@@ -5,6 +5,19 @@ public class grocery_management {
     double[] itemPrices = new double[10];
     int[] itemStocks = new int[10];
 
+    //Sample items
+    itemNames[0] = "Tomatoes";
+    itemPrices[0] = 2.49;
+    itemStocks[0] = 10;
+
+    itemNames[1] = "Onions";
+    itemPrices[1] = 1.99;
+    itemStocks[1] = 8;
+
+    itemNames[2] = "Eggs";
+    itemPrices[2] = 5.25;
+    itemStocks[2] = 12;
+
     //TASK 3
   }
 
