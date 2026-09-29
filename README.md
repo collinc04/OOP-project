@@ -19,16 +19,29 @@ How to Compile and Run
 Program Execution Screenshots
 
 1.Display Inventory
+
+
 <img width="504" height="271" alt="Inventory" src="https://github.com/user-attachments/assets/e93168e5-8b34-416b-bf77-f45704859674" />
+
+
 
 2.Restock Item 
 
+
 <img width="424" height="461" alt="Restock" src="https://github.com/user-attachments/assets/c5e34582-2938-4265-87b8-0bfbba91d14f" />
 
+
+
 3.Item Not Found
+
+
 <img width="421" height="240" alt="NotFound" src="https://github.com/user-attachments/assets/25be0802-82aa-4b7d-a2ef-81a3204b88b1" />
 
+
+
 4.Exit
+
+
 <img width="195" height="168" alt="Exit" src="https://github.com/user-attachments/assets/25de5b1b-94b2-4c94-b950-be0bdb4f3ee5" />
 
 
