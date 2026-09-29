@@ -36,8 +36,9 @@ public class grocery_management {
       System.out.println("\n--Menu--");
       System.out.println("1: View Inventory");
       System.out.println("2: Restock Item");
-      System.out.println("3: Exit");
-      System.out.println("Choose a menu option: ");
+      System.out.println("3: Search Item");
+      System.out.println("4: Exit");
+      System.out.print("Choose a menu option: ");
 
       int choice = keyboard.nextInt();
       System.out.println("\n");
@@ -53,14 +54,23 @@ public class grocery_management {
           
           restockItem(itemNames, itemStocks, itemRestocked, amountAdded);
       }else if (choice == 3){
-        System.out.println("Exiting menu");
-        break;
+      //TASK 4 (PARAS)
+      keyboard.nextLine();//clear leftover new line
+
+      System.out.print("Enter item name to search: ");
+      String searchTarget = keyboard.nextLine();
+
+      searchItem(itemNames, itemPrices, itemStocks, searchTarget);//call the created search method
+
+      }else if (choice == 4){
+      System.out.println("Exiting menu");
+      break;
       }else{
         System.out.println("That is not a valid menu option. ");
       }
-      
-    }
+    }  
   }
+  
 
   //TASK 1 (COLLIN)
   /**
@@ -108,6 +118,35 @@ public class grocery_management {
       System.out.println("Item not found.");
     }
   }
+  //TASK 4 (PARAS)
+/**
+ * Searches for an item by name and displays its information.
+ *
+ * @param names Array of item names.
+ * @param prices Array of item prices.
+ * @param stocks Array of item stocks.
+ * @param target Name of the item to search for.
+ */
+public static void searchItem(String[] names, double[] prices,
+                              int[] stocks, String target) {
+  boolean found = false;
+
+  for (int i = 0; i < names.length; i++) {
+    if (names[i] != null && names[i].equalsIgnoreCase(target)) {
+      System.out.println("Item found!");
+      System.out.println("Name: " + names[i]);
+      System.out.println("Price: $" + prices[i]);
+      System.out.println("Stock: " + stocks[i]);
+
+      found = true;
+      break;
+    }
+  }
+  //display message if item does not found
+  if (!found) {
+    System.out.println("Item not found.");
+  }
+}
 
   /*
   Boilerplate by Collin Cook
