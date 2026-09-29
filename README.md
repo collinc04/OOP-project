@@ -17,20 +17,21 @@ How to Compile and Run
 5. Enter a number from 1 to 4 to select a menu option.
 
 Program Execution Screenshots
-1. Program Menu
-   <img width="1470" height="956" alt="Screenshot 2026-09-29 at 1 46 46 AM" src="https://github.com/user-attachments/assets/587080b3-e25c-429d-a4ff-beff56fee033" />
 
-2.Display Inventory
-<img width="1470" height="956" alt="Screenshot 2026-09-29 at 1 50 07 AM" src="https://github.com/user-attachments/assets/a562dcd5-464e-455c-bfef-cb1749104005" />
+1.Display Inventory
+<img width="504" height="271" alt="Inventory" src="https://github.com/user-attachments/assets/e93168e5-8b34-416b-bf77-f45704859674" />
 
-3.Restock Item and Item Not Found
-<img width="1470" height="956" alt="Screenshot 2026-09-29 at 1 51 40 AM" src="https://github.com/user-attachments/assets/4e0051de-3e17-4392-883a-2ec18d4c50b6" />
+2.Restock Item 
 
-4.Search Item
-<img width="1470" height="956" alt="Screenshot 2026-09-29 at 1 51 40 AM" src="https://github.com/user-attachments/assets/c5965981-cfe1-4fc9-836f-85d3bc21e092" />
+<img width="424" height="461" alt="Restock" src="https://github.com/user-attachments/assets/c5e34582-2938-4265-87b8-0bfbba91d14f" />
 
-5.Exit
-<img width="1470" height="956" alt="Screenshot 2026-09-29 at 1 53 18 AM" src="https://github.com/user-attachments/assets/18f0bf8a-bd11-4280-aefc-22ffae14f750" />
+3.Item Not Found
+<img width="421" height="240" alt="NotFound" src="https://github.com/user-attachments/assets/25be0802-82aa-4b7d-a2ef-81a3204b88b1" />
+
+4.Exit
+<img width="195" height="168" alt="Exit" src="https://github.com/user-attachments/assets/25de5b1b-94b2-4c94-b950-be0bdb4f3ee5" />
+
+
 
 
 Contributors: <br>
@@ -39,7 +40,7 @@ Collin: Task-1, made repo + boilerplate code, and initial commit for the README 
 Samipya: Task-2 <br>
 Kerry: Task-3 <br> 
 Sagar: <br>
-Paras:Task-4, added search item feature, updated the user menu, edited the README, and added program screenshots <br>
+Paras:Task-4,updated the user menu, added program screenshots <br>
 
 
 Javadoc Documentation
