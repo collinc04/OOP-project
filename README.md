@@ -11,7 +11,7 @@ The program is straightforward to run. Entering 1 will display the current inven
 
 Contributors: <br>
 Luke: README <br>
-Collin: Task-1, made repo, and initial commit for the README <br>
+Collin: Task-1, made repo + boilerplate code, and initial commit for the README <br>
 Samipya: Task-2 <br>
 Kerry: Task-3 <br> 
 Sagar: <br>
