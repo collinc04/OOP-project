@@ -1,12 +1,76 @@
+import java.util.Scanner;
+
 public class grocery_management {
+  /**
+   * Main initializes arrays for item names, prives, and stocks
+   * it then displays a menu that allows the user to see inventory,
+   * restock items, or exit. 
+   * 
+   * @param args command line arguments, not used 
+   */
   public static void main(String[] args) {
     //variables to store items
     String[] itemNames = new String[10];
     double[] itemPrices = new double[10];
     int[] itemStocks = new int[10];
 
-    //TASK 3
+    //test values
+    itemNames[0] = "Milk";
+    itemNames[1] = "Eggs";
+    itemNames[2] = "Sugar";
+    itemNames[3] = "Bread";
+    itemPrices[0] = 33.99;
+    itemPrices[1] = 50.99;
+    itemPrices[2] = 5.00;
+    itemPrices[3] = 3.00;
+    itemStocks[0] = 5;
+    itemStocks[1] = 5;
+    itemStocks[2] = 5;
+    itemStocks[3] = 5;
+
+
+    //TASK 3 (Kerry)
+    Scanner keyboard = new Scanner(System.in);
+
+    while (true){
+      System.out.println("\n--Menu--");
+      System.out.println("1: View Inventory");
+      System.out.println("2: Restock Item");
+      System.out.println("3: Search Item");
+      System.out.println("4: Exit");
+      System.out.print("Choose a menu option: ");
+
+      int choice = keyboard.nextInt();
+      System.out.println("\n");
+      if (choice == 1){
+        printInventory(itemNames, itemPrices, itemStocks);
+      }else if (choice == 2){
+          keyboard.nextLine();//used to cleare the leftover newline
+          System.out.print("Enter the name of the item being restocked: ");
+          String itemRestocked = keyboard.nextLine();
+          System.out.print("How many are being added: ");
+          int amountAdded = keyboard.nextInt();
+          System.out.println("\n");
+          
+          restockItem(itemNames, itemStocks, itemRestocked, amountAdded);
+      }else if (choice == 3){
+      //TASK 4 (PARAS)
+      keyboard.nextLine();//clear leftover new line
+
+      System.out.print("Enter item name to search: ");
+      String searchTarget = keyboard.nextLine();
+
+      searchItem(itemNames, itemPrices, itemStocks, searchTarget);//call the created search method
+
+      }else if (choice == 4){
+      System.out.println("Exiting menu");
+      break;
+      }else{
+        System.out.println("That is not a valid menu option. ");
+      }
+    }  
   }
+  
 
   //TASK 1 (COLLIN)
   /**
@@ -17,26 +81,72 @@ public class grocery_management {
    */
   public static void printInventory(String[] names, double[] prices, int[] stocks) {
     //cycle names
+    System.out.println("Name | Price | Stock");
     for(int i = 0; i < names.length; i++) {
       //check null
       if(names[i] != null) {
         //print all the info
-        System.out.println(names[i] + " " + prices[i] + " " + stocks[i]);
+        System.out.println(names[i] + " | " + prices[i] + " | " + stocks[i]);
       }
     }
   }
 
-  //TASK 2
-  /**
-   * TODO
-   * @param names
-   * @param stocks
-   * @param target
-   * @param amount
+  //TASK 2 (Samipya)
+    /**
+   * Adds stock to an existing item by searching for its name.
+   * Prints "Item not found." if no item matches the target name.
+   * @param names Array of item names.
+   * @param stocks Array of item stocks.
+   * @param target The name of the item to restock.
+   * @param amount The quantity to add to the item's current stock.
    */
   public static void restockItem(String[] names, int[] stocks, String target, int amount) {
-    //TODO
+    boolean found = false;
+
+    //cycle names
+    for (int i = 0; i < names.length; i++) {
+      //check null first so equals() doesn't crash on empty slots
+      if (names[i] != null && names[i].equals(target)) {
+        stocks[i] += amount;
+        found = true;
+        break;
+      }
+    }
+
+    //only report failure after checking the whole array
+    if (!found) {
+      System.out.println("Item not found.");
+    }
   }
+  //TASK 4 (PARAS)
+/**
+ * Searches for an item by name and displays its information.
+ *
+ * @param names Array of item names.
+ * @param prices Array of item prices.
+ * @param stocks Array of item stocks.
+ * @param target Name of the item to search for.
+ */
+public static void searchItem(String[] names, double[] prices,
+                              int[] stocks, String target) {
+  boolean found = false;
+
+  for (int i = 0; i < names.length; i++) {
+    if (names[i] != null && names[i].equalsIgnoreCase(target)) {
+      System.out.println("Item found!");
+      System.out.println("Name: " + names[i]);
+      System.out.println("Price: $" + prices[i]);
+      System.out.println("Stock: " + stocks[i]);
+
+      found = true;
+      break;
+    }
+  }
+  //display message if item does not found
+  if (!found) {
+    System.out.println("Item not found.");
+  }
+}
 
   /*
   Boilerplate by Collin Cook
