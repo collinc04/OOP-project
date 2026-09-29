@@ -7,14 +7,14 @@ like its name, price, and stock quantity.
 The same index in each array will refer to the same grocery item.
 
 How the program works:
-The program is straightforward to run. Entering 1 will display the current inventory as shown in the Inventory image. Entering 2 will allow you to specify what item you want to restock and you will be asked how many of that item is being added as shown in the Restock image. If you enter an item that is not listed in the inventory, then you will be informed that the item cannot be found as shown in the NotFound image. Entering 3 will allow you to search for an item by name. If the item is found, the program will display its name, price, and stock. If the item is not found, the program will display "Item not found." Entering 4 will exit the program as shown in the Exit image.
+The program is straightforward to run. Entering 1 will display the current inventory as shown in the Inventory image. Entering 2 will allow you to specify what item you want to restock and you will be asked how many of that item is being added as shown in the Restock image. If you enter an item that is not listed in the inventory, then you will be informed that the item cannot be found as shown in the NotFound image. Entering 3 will exit the program as shown in the Exit image.
 
 How to Compile and Run
 1. Make sure Java is installed on the computer.
 2. Open a terminal in the project folder.
 3. Compile the program using javac grocery_management.java
 4. Run the program using java grocery_management
-5. Enter a number from 1 to 4 to select a menu option.
+5. Enter a number from 1 to 3 to select a menu option.
 
 Program Execution Screenshots
 
