@@ -63,6 +63,8 @@ public class grocery_management {
         keyboard.nextLine();//clear leftover new line
         System.out.println("Exiting menu");
         break;
+      } else{ //not in the menu
+        System.out.println("That is not a valid menu option. ");
       }
     }  
   }
