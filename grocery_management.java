@@ -1,8 +1,15 @@
 import java.util.Scanner;
-
+/**
+ * Represents a grocery management system that stores grocery item
+ * names, prices, and stock quantities using parallel arrays.
+ * The program allows users to view the current inventory, restock
+ * existing items, search for items, and exit the program.
+ *
+ * @author Sagar Neupane
+ */
 public class grocery_management {
   /**
-   * Main initializes arrays for item names, prives, and stocks
+   * Main initializes arrays for item names, prices, and stocks
    * it then displays a menu that allows the user to see inventory,
    * restock items, or exit. 
    * 
